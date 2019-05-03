@@ -13,6 +13,7 @@ You'd like to use polynomial regression to predict a student's final exam score 
 What is the normalized feature $x_2^{(4)}$? (Hint: midterm = 69, final = 78 is training example 4.) Please round off your answer to two decimal places and enter in the text box below.
 
 Answer:
+
 -0.47
 
 
@@ -27,6 +28,7 @@ $\alpha = 0.3$ is an effective choice of learning rate.
 Rather than use the current value of $\alpha$, it'd be more promising to try a larger value of $\alpha$ (say $\alpha = 1.0$).
 
 Answer:
+
 Rather than use the current value of $\alpha$, it'd be more promising to try a smaller value of $\alpha$ (say $\alpha = 0.1$).
 
 
@@ -40,6 +42,7 @@ X is 23x6, y is 23×6, $\thetaθ$ is 6×6
 X is 23x5, y is 23×1, $\thetaθ$ is 5×1
 
 Answer:
+
 X is 23x6, y is 23×1, $\thetaθ$ is 6×1
 
 
@@ -56,19 +59,22 @@ The normal equation, since it provides an efficient way to directly find the sol
 Gradient descent, since it will always converge to the optimal $\theta$.
 
 Answer:
+
 Gradient descent, since $(X^TX)^{-1}$ will be very slow to compute in the normal equation.
 
 
 ## 5.
+
 Which of the following are reasons for using feature scaling?
 
 
-[ ] It prevents the matrix $X^TX$ (used in the normal equation) from being non-invertable (singular/degenerate).
+- [ ] It prevents the matrix $X^TX$ (used in the normal equation) from being non-invertable (singular/degenerate).
 
-[ ] It speeds up gradient descent by making it require fewer iterations to get to a good solution.
+- [ ] It speeds up gradient descent by making it require fewer iterations to get to a good solution.
 
-[ ] It speeds up gradient descent by making each iteration of gradient descent less expensive to compute.
+- [ ] It speeds up gradient descent by making each iteration of gradient descent less expensive to compute.
 
-[ ] It is necessary to prevent the normal equation from getting stuck in local optima.
+- [ ] It is necessary to prevent the normal equation from getting stuck in local optima.
 
 Answer:
+- [x] It speeds up gradient descent by making it require fewer iterations to get to a good solution.
