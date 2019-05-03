@@ -20,11 +20,12 @@ grad = zeros(size(theta));
 % Note: grad should have the same dimensions as theta
 %
 
+hx=sigmoid(X*theta);
+J = mean(-y .* log(hx) - (1-y) .* log(1-hx));
 
-
-
-
-
+for i=1:length(theta)
+  grad(i) = mean((hx - y) .* X(:,i));
+end
 
 
 % =============================================================
